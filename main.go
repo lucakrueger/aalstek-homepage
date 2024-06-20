@@ -22,7 +22,7 @@ func main() {
 	configuration, err := config.ReadConfig()
 	if err != nil {
 		fmt.Println(err.Error())
-		os.Exit(1)
+		os.Exit(0)
 	}
 
 	router.Route(app)
