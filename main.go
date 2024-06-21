@@ -16,8 +16,8 @@ func main() {
 		Views: engine,
 	})
 
-	app.Static("/", "./static")
-	app.Static("/", "./routes")
+	app.Static("/", "/static")
+	app.Static("/", "/routes")
 
 	configuration, err := config.ReadConfig()
 	if err != nil {
