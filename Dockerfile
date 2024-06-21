@@ -7,6 +7,8 @@ RUN apt-get install -y git
 
 RUN git clone https://github.com/lucakrueger/aalstek-homepage.git
 
+RUN cd aalstek-homepage
+
 RUN go get .
 RUN go build main.go
 
